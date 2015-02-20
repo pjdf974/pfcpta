@@ -3,7 +3,7 @@ pfcpta
 
 Chiffre comptable
 
-Version 0.2 ( correction de diverses erreurs)
+Version 0.2.1
 
 ```js
 
