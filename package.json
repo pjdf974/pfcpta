@@ -1,6 +1,6 @@
 {
   "name": "pfcpta",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Affichage des nombres sous la forme 999 999 999.99",
   "main": "cpta.js",
   "scripts": {

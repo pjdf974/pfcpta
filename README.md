@@ -3,32 +3,47 @@ pfcpta
 
 Chiffre comptable
 
-Version 0.2.3
+Version 0.2.4
+
+WARNING : 
+Cpta.ent replace with Cpta.e
+Cpta.dec replace with Cpta.d
+Cpta.cpta replace with Cpta.c
+          
 
 ```js
 
 var Cpta = require("pfcpta"); 
 
-var a = new Cpta({ent:452, dec:14});  // 452.14
-// ou var a = Cpta({ent:452, dec:14});  // 452.14
+/*  DEPRECATED :
+    var a = new Cpta({ent:452, dec:14});  // 452.14 
+    var a = Cpta({ent:452, dec:14});  // 452.14
+    console.log(a.ent, a.dec, a.cpta);// 452 14 452.14
 
-var b = new Cpta({ent:7854.5});  // 7 854.00
+    remplace with :
+    var a = new Cpta({e:452, d:14});  // 452.14 
+    var a = Cpta({e:452, d:14});  // 452.14
+    console.log(a.e, a.d, a.c);// 452 14 452.14
 
-var c = new Cpta({ent:-45.0});  // -45.00
+*/
 
-var d = new Cpta({ent:.0, dec:74});  // "0.74
+var b = new Cpta({e:7854.5});  // 7 854.00
 
-var e = new Cpta({dec:"Oté la po"});  // 0.00
+var c = new Cpta({e:-45.0});  // -45.00
 
-var f = new Cpta({dec:"45.543.5"});  // 0.45
+var d = new Cpta({e:.0, d:74});  // "0.74
 
-var g = new Cpta({ent:78541.259874, dec:45845});  // 78 541.45
+var e = new Cpta({d:"Oté la po"});  // 0.00
 
-var h = new Cpta({ent:"7485.2.25"});  // 7 485.00
+var f = new Cpta({d:"45.543.5"});  // 0.45
 
-var i = new Cpta({dec:"coucou.54", ent:"478OTE"});   // 478.00
+var g = new Cpta({e:78541.259874, d:45845});  // 78 541.45
 
-var j = new Cpta({ent:"87.5,54"});   // 87.00
+var h = new Cpta({e:"7485.2.25"});  // 7 485.00
+
+var i = new Cpta({d:"coucou.54", e:"478OTE"});   // 478.00
+
+var j = new Cpta({e:"87.5,54"});   // 87.00
 
 var k = new Cpta(452);   // 452.00
 
@@ -75,5 +90,5 @@ var bbC = new Cpta(bb);
 
 console.log("%d + %d = %d MAIS avec Cpta = %s car :", aa, bb, aa+bb, aaC.add(bbC));
 // 19 603.84
-console.log("%s + %s = %s", aaC.cpta, bbC.cpta, aaC.add(bbC));
+console.log("%s + %s = %s", aaC.c, bbC.c, aaC.add(bbC));
 ```
