@@ -1,6 +1,6 @@
 {
   "name": "pfcpta",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Affichage des nombres sous la forme 999 999 999.99",
   "main": "cpta.js",
   "scripts": {
@@ -12,22 +12,20 @@
   },
   "keywords": [
     "comptabilité",
+    "compta",
     "format comptable",
-    "chiffre"
+    "chiffre",
+    "number",
+    "nombre"
   ],
   "author": {
     "name": "pjdf974"
   },
   "license": "free",
-  "gitHead": "f545e90966f4f64cd51beb35008d195f629f770b",
   "bugs": {
     "url": "https://github.com/pjdf974/pfcpta/issues"
   },
   "homepage": "https://github.com/pjdf974/pfcpta",
-  "_id": "pfcpta@0.2.1",
-  "_shasum": "f829f42cde1f4e855acd508dcd7b4f8ee3134dbb",
-  "_from": "pfcpta@latest",
-  "_npmVersion": "1.4.23",
   "_npmUser": {
     "name": "pjdf974",
     "email": "p0k3pypr0g@gmail.com"
@@ -37,12 +35,5 @@
       "name": "pjdf974",
       "email": "p0k3pypr0g@gmail.com"
     }
-  ],
-  "dist": {
-    "shasum": "be8b2114671fa55d7400b73894a8a346f0d6a6e4",
-    "tarball": "http://registry.npmjs.org/pfcpta/-/pfcpta-0.0.1.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/pfcpta/-/pfcpta-0.2.1.tgz",
-  "readme": "ERROR: No README data found!"
+  ]
 }
